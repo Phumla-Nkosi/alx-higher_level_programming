@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Defines unittests for base.py.
-
 Unittest classes:
     TestBase_instantiation - line 21
     TestBase_to_json_string - line 108
@@ -543,6 +542,7 @@ class TestBase_load_from_file_csv(unittest.TestCase):
     def test_load_from_file_csv_more_than_one_arg(self):
         with self.assertRaises(TypeError):
             Base.load_from_file_csv([], 1)
+
 
 if __name__ == "__main__":
     unittest.main()
